@@ -13,7 +13,7 @@ Model_Verification contains the results of comparing the concentration profiles 
 
 Position_Related_Plots contains the concentration results for the concentration in the vitreous humor and fovea for the case of slow convection and injection at the top, middle, and bottomw of the vitreous. Matlab scripts generate the plots for the concentration at the vitreous and fovea.
 
-Human_eye_vitreous_0.05_mL_injection.mph contains the human vitreous geometry. For changing between convective options you must go to "Darcy's law" and then change the velocity in "Inlet 1". For activating/deactivating elimination routes, you need to go to "Transport of Diluted Species" and in "Concentration 1" select or not the outer surface of the vitreous humor. To change the bolus injection location go to "Geometry 1" and choose "Drug injected".
+Human_eye_vitreous_0.05_mL_injection.mph contains the human vitreous geometry. For updating the aqueous humor inlet velocity, change the variable u_AH in "Parameters" to the desired value. For activating/deactivating elimination routes, you need to go to "Transport of Diluted Species" and in "Concentration Boundary Condition" select or not the outer surface of the vitreous humor. To change the bolus injection location go to "Parameters" and update the variables x_drug, y_drug, and z_drug.
 
 In the rabbit folder:
 
@@ -25,4 +25,4 @@ Model_Verification contains the results of comparing the concentration profiles 
 
 Position_Related_Plots contains the concentration results for the concentration in the vitreous humor and fovea for the case of slow convection and injection at the top, middle, and bottomw of the vitreous. Matlab scripts generate the plots for the concentration at the vitreous and fovea.
 
-Rabbit_eye_vitreous_0.05_mL_injection.mph contains the rabbit vitreous geometry. For changing between convective options you must go to "Darcy's law" and then change the velocity in "Inlet 1". For activating/deactivating elimination routes, you need to go to "Transport of Diluted Species" and in "Concentration 1" select or not the outer surface of the vitreous humor. To change the bolus injection location go to "Geometry 1" and choose "Drug injected".
+Rabbit_eye_vitreous_0.05_mL_injection.mph contains the rabbit vitreous geometry. For updating the aqueous humor inlet velocity, change the variable u_AH in "Parameters" to the desired value. For activating/deactivating elimination routes, you need to go to "Transport of Diluted Species" and in "Concentration Boundary Condition" select or not the outer surface of the vitreous humor. To change the bolus injection location go to "Parameters" and update the variables x_drug, y_drug, and z_drug.
