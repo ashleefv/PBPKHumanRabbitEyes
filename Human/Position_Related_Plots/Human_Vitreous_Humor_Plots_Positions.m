@@ -47,11 +47,17 @@ yrange = 'N5:N205';
 y_calc_2b = xlsread(filename,sheet,yrange);
 
 subplot(1,3,1)
-plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b',texp1,y_exp1,'ok',texp2,y_exp2,'^g',texp3,y_exp3,'diamond','LineWidth',4)
+hold on
+box on
+plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b','LineWidth',4)
+plot(texp1,y_exp1,'o',texp2,y_exp2,'^',texp3,y_exp3,'diamond','LineWidth',4)
+newcolors = ["#D95319" "#EDB120" "#77AC30"];
+colororder(newcolors)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',14)
 axis([0 100, 0 300])
 legend('Case 1a', 'Case1b','Case 2a', 'Case2b','Zhu et al. (2008)','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','FontName','Arial','FontSize',10)
+hold off
 
 %% Middle vitreous
 
@@ -61,26 +67,6 @@ sheet = 1;
 %Calculated time points
 trange = 'D5:D205';
 tcalc1 = xlsread(filename,sheet,trange);
-
-%Experimental data
-
-%Zhu et al. (2008)
-trange = 'A5:A15';
-yrange = 'B5:B15';
-texp1 = xlsread(filename,sheet,trange);
-y_exp1 = xlsread(filename,sheet,yrange);
-
-%Beer et al. (2006). Patient 1
-trange = 'A20';
-yrange = 'B20';
-texp2 = xlsread(filename,sheet,trange);
-y_exp2 = xlsread(filename,sheet,yrange);
-
-%Beer et al. (2006). Patient 2
-trange = 'A23';
-yrange = 'B23';
-texp3 = xlsread(filename,sheet,trange);
-y_exp3 = xlsread(filename,sheet,yrange);
 
 %Case 1a
 yrange = 'E5:E205';
@@ -99,10 +85,16 @@ yrange = 'N5:N205';
 y_calc_2b = xlsread(filename,sheet,yrange);
 
 subplot(1,3,2)
-plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b',texp1,y_exp1,'ok',texp2,y_exp2,'^g',texp3,y_exp3,'diamond','LineWidth',4)
+hold on
+box on
+plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b','LineWidth',4)
+plot(texp1,y_exp1,'o',texp2,y_exp2,'^',texp3,y_exp3,'diamond','LineWidth',4)
+newcolors = ["#D95319" "#EDB120" "#77AC30"];
+colororder(newcolors)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 100, 0 300])
 legend('Case 1a', 'Case1b','Case 2a', 'Case2b','Zhu et al. (2008)','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','FontName','Arial','FontSize',10)
+hold off
 
 %% Bottom vitreous
 
@@ -112,26 +104,6 @@ sheet = 1;
 %Calculated time points
 trange = 'D5:D205';
 tcalc1 = xlsread(filename,sheet,trange);
-
-%Experimental data
-
-%Zhu et al. (2008)
-trange = 'A5:A15';
-yrange = 'B5:B15';
-texp1 = xlsread(filename,sheet,trange);
-y_exp1 = xlsread(filename,sheet,yrange);
-
-%Beer et al. (2006). Patient 1
-trange = 'A20';
-yrange = 'B20';
-texp2 = xlsread(filename,sheet,trange);
-y_exp2 = xlsread(filename,sheet,yrange);
-
-%Beer et al. (2006). Patient 2
-trange = 'A23';
-yrange = 'B23';
-texp3 = xlsread(filename,sheet,trange);
-y_exp3 = xlsread(filename,sheet,yrange);
 
 %Case 1a
 yrange = 'E5:E205';
@@ -150,7 +122,13 @@ yrange = 'N5:N205';
 y_calc_2b = xlsread(filename,sheet,yrange);
 
 subplot(1,3,3)
-plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b',texp1,y_exp1,'ok',texp2,y_exp2,'^g',texp3,y_exp3,'diamond','LineWidth',4)
+hold on
+box on
+plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_calc_2b,'--b','LineWidth',4)
+plot(texp1,y_exp1,'o',texp2,y_exp2,'^',texp3,y_exp3,'diamond','LineWidth',4)
+newcolors = ["#D95319" "#EDB120" "#77AC30"];
+colororder(newcolors)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 100, 0 300])
 legend('Case 1a', 'Case1b','Case 2a', 'Case2b','Zhu et al. (2008)','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','FontName','Arial','FontSize',10)
+hold off
