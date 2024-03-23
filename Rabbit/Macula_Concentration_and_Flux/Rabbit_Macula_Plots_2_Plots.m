@@ -62,13 +62,13 @@ hold off
 subplot(1,2,2)
 colororder({'k','k'})
 yyaxis left
-plot(t_calc1,y_calc1b_flux,'m',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
+plot(t_calc1,y_calc1b_flux,'y',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',12)
 %legend('Case 1b', 'Case 2b','FontName','Arial','FontSize',10)
 
 yyaxis right
-plot(t_calc2,y_calc1b_conc,'y',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
+plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
 yline (0.5,'--k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',12)
@@ -80,7 +80,7 @@ axes('position',[.79 .3 .1 .2])
 box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 42) & (t_calc2  > 0); % range of t near perturbation
 hold on
-plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'y',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
+plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
 yline (0.5,'--k')
 axis([2 14, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
@@ -149,13 +149,13 @@ hold off
 subplot(1,2,2)
 colororder({'k','k'})
 yyaxis left
-plot(t_calc1,y_calc1b_flux,'m',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
+plot(t_calc1,y_calc1b_flux,'y',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',12)
 %legend('Case 1b', 'Case 2b','FontName','Arial','FontSize',10)
 
 yyaxis right
-plot(t_calc2,y_calc1b_conc,'y',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
+plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
 yline (0.5,'--k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',12)
@@ -167,7 +167,7 @@ axes('position',[.79 .3 .1 .2])
 box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 42) & (t_calc2  > 0); % range of t near perturbation
 hold on
-plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'y',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
+plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
 yline (0.5,'--k')
 axis([2 14, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
@@ -236,13 +236,13 @@ hold off
 subplot(1,2,2)
 colororder({'k','k'})
 yyaxis left
-plot(t_calc1,y_calc1b_flux,'m',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
+plot(t_calc1,y_calc1b_flux,'y',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',12)
 %legend('Case 1b', 'Case 2b','FontName','Arial','FontSize',10)
 
 yyaxis right
-plot(t_calc2,y_calc1b_conc,'y',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
+plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
 yline (0.5,'--k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',12)
@@ -254,7 +254,7 @@ axes('position',[.79 .3 .1 .2])
 box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 42) & (t_calc2  > 0); % range of t near perturbation
 hold on
-plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'y',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
+plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
 yline (0.5,'--k')
 axis([2 14, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
@@ -323,13 +323,13 @@ hold off
 subplot(1,2,2)
 colororder({'k','k'})
 yyaxis left
-plot(t_calc1,y_calc1b_flux,'m',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
+plot(t_calc1,y_calc1b_flux,'y',t_calc1,y_calc2b_flux,'--g','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',12)
 %legend('Case 1b', 'Case 2b','FontName','Arial','FontSize',10)
 
 yyaxis right
-plot(t_calc2,y_calc1b_conc,'y',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
+plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
 yline (0.5,'--k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',12)
@@ -341,7 +341,7 @@ axes('position',[.79 .3 .1 .2])
 box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 42) & (t_calc2  > 0); % range of t near perturbation
 hold on
-plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'y',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
+plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
 yline (0.5,'--k')
 axis([2 14, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
