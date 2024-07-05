@@ -1,4 +1,6 @@
 # PBPKHumanRabbitEyes
+[![DOI](https://zenodo.org/badge/125926100.svg)](https://zenodo.org/doi/10.5281/zenodo.1226604)
+
 
 Authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
 
