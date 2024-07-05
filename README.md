@@ -1,5 +1,8 @@
 # PBPKHumanRabbitEyes
-physiologically based pharmacokinetics for drugs in human and rabbit eyes
+
+Authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
+
+Physiologically based pharmacokinetics for drugs in human and rabbit eyes
 
 The results and script for generating the plots are divided in rabbit and human folders.
 
