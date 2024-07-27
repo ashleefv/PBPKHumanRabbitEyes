@@ -5,8 +5,8 @@ clc
 c0 = 856.5318; % Initial concentration at the vitreous right after injection
 
 
-%% Top Vitreous
-filename = 'Rabbit_Vitreous_Humor_Results_Top_Vitreous.xlsx';
+%% Anterior Vitreous
+filename = 'Rabbit_Vitreous_Humor_Results_Anterior_Vitreous.xlsx';
 sheet = 1;
 
 %Calculated time points
@@ -126,8 +126,8 @@ axis([0 40, 0 1])
 legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
 hold off
 
-%% Bottom Vitreous
-filename = 'Rabbit_Vitreous_Humor_Results_Bottom_Vitreous.xlsx';
+%% Posterior Vitreous
+filename = 'Rabbit_Vitreous_Humor_Results_Posterior_Vitreous.xlsx';
 sheet = 1;
 
 %Calculated time points

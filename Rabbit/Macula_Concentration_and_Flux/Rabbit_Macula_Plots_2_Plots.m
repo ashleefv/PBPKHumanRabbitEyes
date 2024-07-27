@@ -1,8 +1,8 @@
 clear variables
 clc
 
-%% Top vitreous
-filename = 'Rabbit_Macula_Results_Top_Vitreous.xlsx';
+%% Anterior vitreous
+filename = 'Rabbit_Macula_Results_Anterior_Vitreous.xlsx';
 sheet = 1; 
 
 %Time ranges
@@ -262,8 +262,8 @@ ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',8)
 
 hold off
 
-%% Bottom vitreous
-filename = 'Rabbit_Macula_Results_Bottom_Vitreous.xlsx';
+%% Posterior vitreous
+filename = 'Rabbit_Macula_Results_Posterior_Vitreous.xlsx';
 sheet = 1; 
 
 %Time ranges

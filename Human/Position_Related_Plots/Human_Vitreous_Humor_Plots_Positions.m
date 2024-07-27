@@ -5,9 +5,9 @@ clc
 c0 = 259.9276; %Initial vitreous concentration
 
 
-%% Top vitreous
+%% Anterior vitreous
 
-filename = 'Human_Vitreous_Humor_Results_Top_Vitreous.xlsx';
+filename = 'Human_Vitreous_Humor_Results_Anterior_Vitreous.xlsx';
 sheet = 1; 
 
 %Calculated time points
@@ -97,9 +97,9 @@ axis([0 100, 0 1])
 legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','Zhu et al. (2008)','FontName','Arial','FontSize',10)
 hold off
 
-%% Bottom vitreous
+%% Posterior vitreous
 
-filename = 'Human_Vitreous_Humor_Results_Bottom_Vitreous.xlsx';
+filename = 'Human_Vitreous_Humor_Results_Posterior_Vitreous.xlsx';
 sheet = 1; 
 
 %Calculated time points
