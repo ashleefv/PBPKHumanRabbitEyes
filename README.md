@@ -6,6 +6,8 @@ Authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
 
 Physiologically based pharmacokinetics for drugs in human and rabbit eyes
 
+Preprint: [![DOI]](https://www.biorxiv.org/content/10.1101/2023.05.05.539491v3)
+
 The results and script for generating the plots are divided in rabbit and human folders.
 
 In "Human" folder:
