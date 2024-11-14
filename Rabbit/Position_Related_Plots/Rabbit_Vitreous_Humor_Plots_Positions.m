@@ -70,6 +70,7 @@ y_calc_2a = xlsread(filename,sheet,yrange)./c0;
 yrange = 'N5:N85';
 y_calc_2b = xlsread(filename,sheet,yrange)./c0;
 
+figure()
 subplot(1,3,1)
 hold on
 box on
@@ -84,7 +85,7 @@ colororder(newcolors)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 40, 0 1])
-legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
+%legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
 hold off
 
 %% Mid vitreous
@@ -123,7 +124,7 @@ errorbar(texp4,y_exp4,stdv4,'^','LineWidth',4)
 plot(texp5,y_exp5,'+','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 40, 0 1])
-legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
+%legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
 hold off
 
 %% Posterior Vitreous
@@ -162,5 +163,11 @@ errorbar(texp4,y_exp4,stdv4,'^','LineWidth',4)
 plot(texp5,y_exp5,'+','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 40, 0 1])
-legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
+%legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
 hold off
+
+%Overall legend
+legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Bakri et al. (2007)', 'Nomoto et al. (2009)','Sinapis et al. (2011)', 'Ahn et al. (2013)','Ye et al. (2015)','FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.02 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');

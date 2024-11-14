@@ -39,11 +39,10 @@ subplot(1,3,1)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc2,y_calc1b_conc,'m',t_calc1,y_calc2a_conc,'--r',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
-ylabel('Conc. norm. to max. vitreous conc.','FontName','Arial','FontSize',14)
+ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',14)
 axis([0 100, 0 3500])
-legend('Case 1a','Case 1b','Case 2a','Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
 % create a new pair of axes inside current figure
 axes('position',[.275 .25 .06 .22])
@@ -52,7 +51,7 @@ indexOfInterest1 = (t_calc1 < 100) & (t_calc1  > 4); % range of t of interest
 indexOfInterest2 = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest1),y_calc1a_conc(indexOfInterest1),'c',t_calc2(indexOfInterest2),y_calc1b_conc(indexOfInterest2),'m',t_calc1(indexOfInterest1),y_calc2a_conc(indexOfInterest1),'--r',t_calc2(indexOfInterest2),y_calc2b_conc(indexOfInterest2),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -97,10 +96,9 @@ subplot(1,3,2)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc2,y_calc1b_conc,'m',t_calc1,y_calc2a_conc,'--r',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 100, 0 3500])
-legend('Case 1a','Case 1b','Case 2a', 'Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
 % create a new pair of axes inside current figure
 axes('position',[.555 .25 .06 .22])
@@ -109,7 +107,7 @@ indexOfInterest1 = (t_calc1 < 100) & (t_calc1  > 4); % range of t of interest
 indexOfInterest2 = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest1),y_calc1a_conc(indexOfInterest1),'c',t_calc2(indexOfInterest2),y_calc1b_conc(indexOfInterest2),'m',t_calc1(indexOfInterest1),y_calc2a_conc(indexOfInterest1),'--r',t_calc2(indexOfInterest2),y_calc2b_conc(indexOfInterest2),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -154,10 +152,9 @@ subplot(1,3,3)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc2,y_calc1b_conc,'m',t_calc1,y_calc2a_conc,'--r',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 100, 0 3500])
-legend('Case 1a','Case 1b','Case 2a','Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
 % create a new pair of axes inside current figure
 axes('position',[.838 .25 .06 .22])
@@ -166,9 +163,14 @@ indexOfInterest1 = (t_calc1 < 100) & (t_calc1  > 4); % range of t of interest
 indexOfInterest2 = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest1),y_calc1a_conc(indexOfInterest1),'c',t_calc2(indexOfInterest2),y_calc1b_conc(indexOfInterest2),'m',t_calc1(indexOfInterest1),y_calc2a_conc(indexOfInterest1),'--r',t_calc2(indexOfInterest2),y_calc2b_conc(indexOfInterest2),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
-
 hold off
+
+%Overall legend
+legend('Case 1a','Case 1b','Case 2a', 'Case 2b','0.5 \mug/mL threshold = C_f \it{in vitro} threshold','FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');

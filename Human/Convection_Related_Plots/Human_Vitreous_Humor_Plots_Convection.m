@@ -58,7 +58,6 @@ colororder(newcolors)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 100, 0 1])
-legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','Zhu et al. (2008)','FontName','Arial','FontSize',10)
 hold off
 
 %% Middle vitreous fast convection
@@ -93,5 +92,10 @@ plot(tcalc1,y_calc_1a,'c',tcalc1,y_calc_1b,'m',tcalc1,y_calc_2a,'--r',tcalc1,y_c
 plot(texp1,y_exp1,'^',texp2,y_exp2,'diamond',texp3,y_exp3,'o','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 axis([0 100, 0 1])
-legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','Zhu et al. (2008)','FontName','Arial','FontSize',10)
 hold off
+
+%Overall legend
+legend('Case 1a', 'Case 1b','Case 2a', 'Case 2b','Beer et al. (2006). Patient 1','Beer et al. (2006). Patient 2','Zhu et al. (2008)','FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');

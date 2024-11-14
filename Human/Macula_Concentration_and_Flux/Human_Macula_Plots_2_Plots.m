@@ -40,11 +40,16 @@ subplot(1,2,1)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc1,y_calc2a_conc,'--r','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',13)
 axis([0 100, 0 180])
-legend('Case 1a','Case 2a', '0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
+
+%Overall legend
+legend('Case 1a', 'Case 2a','0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.35 .3 .1 .2])
@@ -52,7 +57,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc1 < 100    ) & (t_calc1  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest),y_calc1a_conc(indexOfInterest),'c',t_calc1(indexOfInterest),y_calc2a_conc(indexOfInterest),'--r') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -70,11 +75,15 @@ ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',13)
 
 yyaxis right
 plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',13)
-legend('Case 1b', 'Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
+%Overall legend
+legend('Case 1b','Case 2b', 'Case 1b', 'Case 2b', '0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.79 .3 .1 .2])
@@ -82,7 +91,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([0 20, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -128,11 +137,16 @@ subplot(1,2,1)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc1,y_calc2a_conc,'--r','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',13)
 axis([0 100, 0 300])
-legend('Case 1a','Case 2a', '0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
+
+%Overall legend
+legend('Case 1a', 'Case 2a','0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.35 .3 .1 .2])
@@ -140,7 +154,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc1 < 100    ) & (t_calc1  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest),y_calc1a_conc(indexOfInterest),'c',t_calc1(indexOfInterest),y_calc2a_conc(indexOfInterest),'--r') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -158,11 +172,15 @@ ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',13)
 
 yyaxis right
 plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',13)
-legend('Case 1b', 'Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
+%Overall legend
+legend('Case 1b','Case 2b', 'Case 1b', 'Case 2b', '0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.79 .3 .1 .2])
@@ -170,7 +188,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([0 20, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -216,11 +234,16 @@ subplot(1,2,1)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc1,y_calc2a_conc,'--r','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',13)
 axis([0 100, 0 400])
-legend('Case 1a','Case 2a', '0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
+
+%Overall legend
+legend('Case 1a', 'Case 2a','0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.35 .3 .1 .2])
@@ -228,7 +251,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc1 < 100    ) & (t_calc1  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest),y_calc1a_conc(indexOfInterest),'c',t_calc1(indexOfInterest),y_calc2a_conc(indexOfInterest),'--r') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -246,11 +269,15 @@ ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',13)
 
 yyaxis right
 plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',13)
-legend('Case 1b', 'Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
+%Overall legend
+legend('Case 1b','Case 2b', 'Case 1b', 'Case 2b', '0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.79 .3 .1 .2])
@@ -258,7 +285,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([0 20, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -304,11 +331,16 @@ subplot(1,2,1)
 hold on
 box on
 plot(t_calc1,y_calc1a_conc,'c',t_calc1,y_calc2a_conc,'--r','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',13)
 axis([0 100, 0 800])
-legend('Case 1a','Case 2a', '0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
+
+%Overall legend
+legend('Case 1a', 'Case 2a','0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.35 .3 .1 .2])
@@ -316,7 +348,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc1 < 100    ) & (t_calc1  > 4); % range of t of interest
 hold on
 plot(t_calc1(indexOfInterest),y_calc1a_conc(indexOfInterest),'c',t_calc1(indexOfInterest),y_calc2a_conc(indexOfInterest),'--r') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([10 100, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',8)
@@ -334,11 +366,15 @@ ylabel('Flux (\mug/(mm^2 · d))','FontName','Arial','FontSize',13)
 
 yyaxis right
 plot(t_calc2,y_calc1b_conc,'m',t_calc2,y_calc2b_conc,'--b','LineWidth',4)
-yline (0.5,'--k','LineWidth',4)
+yline (0.5,':k','LineWidth',4)
 xlabel('Time (days)','FontName','Arial','FontSize',13)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',13)
-legend('Case 1b', 'Case 2b','0.5 \mug/mL threshold','FontName','Arial','FontSize',10)
 
+%Overall legend
+legend('Case 1b','Case 2b', 'Case 1b', 'Case 2b', '0.5 \mug/mL = C_f  in vitro threshold', 'FontName','Arial','FontSize',10)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
 
 % create a new pair of axes inside current figure
 axes('position',[.79 .3 .1 .2])
@@ -346,7 +382,7 @@ box on % put box around new pair of axes
 indexOfInterest = (t_calc2 < 100) & (t_calc2  > 4); % range of t of interest
 hold on
 plot(t_calc2(indexOfInterest),y_calc1b_conc(indexOfInterest),'m',t_calc2(indexOfInterest),y_calc2b_conc(indexOfInterest),'--b') % plot on new axes
-yline (0.5,'--k')
+yline (0.5,':k')
 axis([0 20, 0 4])
 xlabel('Time (days)','FontName','Arial','FontSize',8)
 ylabel('Average concentration (\mug/mL)','FontName','Arial','FontSize',8)

@@ -50,7 +50,6 @@ figure()
 plot(t_calc1,y_calc1a_finer,'b',t_calc1,y_calc1a_extra_fine,'--r',t_calc1,y_calc1a_extremely_fine,':g','LineWidth',3)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 40, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 1a')
 
 figure()
@@ -59,7 +58,6 @@ plot(t_calc1,y_calc1a_finer,'b',t_calc1,y_calc1a_extra_fine,'--r',t_calc1,y_calc
 %xlabel('Time (days)','FontName','Arial','FontSize',12)
 %ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',12)
 axis([0 40, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 1b')
 
 figure()
@@ -68,7 +66,6 @@ plot(t_calc1,y_calc1a_finer,'b',t_calc1,y_calc1a_extra_fine,'--r',t_calc1,y_calc
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 40, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 2a')
 
 figure()
@@ -77,5 +74,10 @@ plot(t_calc1,y_calc1a_finer,'b',t_calc1,y_calc1a_extra_fine,'--r',t_calc1,y_calc
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 %ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',12)
 axis([0 40, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 2b')
+
+%Overall legend
+legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');

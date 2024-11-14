@@ -48,19 +48,14 @@ y_calc2b_extremely_fine = xlsread(filename,sheet,yrange2b)./c0;
 figure()
 %subplot(2,2,1)
 plot(t_calc1,y_calc1a_finer,'b',t_calc1,y_calc1a_extra_fine,'--r',t_calc1,y_calc1a_extremely_fine,':g','LineWidth',3)
-%xlabel('Time (days)','FontName','Arial','FontSize',12)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 100, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 1a')
 
 figure()
 %subplot(2,2,2)
 plot(t_calc1,y_calc1b_finer,'b',t_calc1,y_calc1b_extra_fine,'--r',t_calc1,y_calc1b_extremely_fine,':g','LineWidth',3)
-%xlabel('Time (days)','FontName','Arial','FontSize',12)
-%ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',12)
 axis([0 100, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 1b')
 
 figure()
@@ -69,14 +64,17 @@ plot(t_calc1,y_calc2a_finer,'b',t_calc1,y_calc2a_extra_fine,'--r',t_calc1,y_calc
 xlabel('Time (days)','FontName','Arial','FontSize',14)
 ylabel('Normalized vitreous concentration','FontName','Arial','FontSize',14)
 axis([0 100, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 2a')
 
 figure()
 %subplot(2,2,4)
 plot(t_calc1,y_calc2b_finer,'b',t_calc1,y_calc2b_extra_fine,'--r',t_calc1,y_calc2b_extremely_fine,':g','LineWidth',3)
 xlabel('Time (days)','FontName','Arial','FontSize',14)
-%ylabel('Concentration (\mug/mL)','FontName','Arial','FontSize',12)
 axis([0 100, 0 1])
-legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
 %title('Case 2b')
+
+%Overall legend
+legend('Finer mesh', 'Extra fine mesh','Extremely fine mesh','FontName','Arial','FontSize',12)
+h = legend('Location','northoutside', 'Orientation', 'horizontal');
+p = [0.5 0.98 0.03 0.03];
+set(h,'Position', p,'Units', 'normalized');
