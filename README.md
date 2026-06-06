@@ -1,12 +1,11 @@
 # PBPKHumanRabbitEyes
-[![DOI](https://zenodo.org/badge/125926100.svg)](https://zenodo.org/doi/10.5281/zenodo.1226604)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1226605.svg)](https://doi.org/10.5281/zenodo.1226605)
 
+Code authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
 
-Authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
+Computer modeling of bevacizumab drug distribution after intravitreal injection in rabbit and human eyes
 
-Physiologically based pharmacokinetics for drugs in human and rabbit eyes
-
-Preprint: [[DOI 10.1101/2023.05.05.539491v3]](https://www.biorxiv.org/content/10.1101/2023.05.05.539491v3)
+Manuscript: [[DOI 10.1016/j.xphs.2024.12.005]](https://doi.org/10.1016/j.xphs.2024.12.005)
 
 The results and script for generating the plots are divided in rabbit and human folders.
 
