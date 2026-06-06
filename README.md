@@ -5,7 +5,7 @@ Code authors: J. M. Chowdhury*, E. A. Chacin Ruiz*, and A. N. Ford Versypt
 
 Computer modeling of bevacizumab drug distribution after intravitreal injection in rabbit and human eyes
 
-Manuscript: [[DOI 10.1016/j.xphs.2024.12.005]](https://doi.org/10.1016/j.xphs.2024.12.005)
+Corresponding manuscript: [[DOI 10.1016/j.xphs.2024.12.005]](https://doi.org/10.1016/j.xphs.2024.12.005)
 
 The results and script for generating the plots are divided in rabbit and human folders.
 
